@@ -171,7 +171,8 @@ p{margin:0 0 .9rem}
   background:#fff;
 }
 .hero-circle img{
-  width:100%; height:100%; object-fit:contain; display:block;
+  width:100%; height:100%; object-fit:cover; display:block;
+
 }
 .leaf{position:absolute; width:90px; opacity:.55}
 .leaf-tr{top:-10px; right:-10px; transform:rotate(35deg)}
@@ -409,6 +410,25 @@ p{margin:0 0 .9rem}
 }
 .contact-list a:hover{color:var(--gold-2)}
 .contact-deco{position:absolute; right:-30px; bottom:-30px; opacity:.55}
+
+.availability{
+  background:rgba(255,255,255,.5);
+  border-radius:var(--radius);
+  padding:20px 22px; margin-bottom:28px;
+}
+.availability h3{
+  font-family:'Playfair Display',serif; font-weight:500;
+  font-size:1.1rem; margin:0 0 12px;
+}
+.availability-list{display:flex; flex-direction:column; gap:8px; margin:0 0 12px}
+.availability-list li{
+  display:flex; justify-content:space-between; align-items:baseline; gap:16px;
+  font-size:.92rem; color:var(--ink);
+  padding-bottom:8px; border-bottom:1px solid rgba(59,42,36,.1);
+}
+.availability-list li:last-child{border-bottom:0; padding-bottom:0}
+.availability-list span{color:var(--ink-2); text-align:right}
+.availability-note{margin:0; font-size:.82rem; color:var(--ink-2); font-style:italic}
 
 /* ============ FOOTER ============ */
 .footer{padding:32px 0 40px; border-top:1px solid var(--line)}
